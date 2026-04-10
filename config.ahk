@@ -25,6 +25,7 @@
 #í::media_next
 
 ; DISABLE USELESS SHORTCUTS
+*#s::return
 *#d::return 
 *#q::return
 ;#f::return
