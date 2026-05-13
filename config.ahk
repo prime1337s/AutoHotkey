@@ -1,4 +1,6 @@
-﻿#+r::Reload  ; Windows+Shift+R Reload config
+﻿; # windows + shift ^ control ! alt * ctrl/alt/shift
+
+#+r::Reload
 
 ; RUNNING APPS
 
@@ -12,7 +14,7 @@
 
 ; MEDIA CONTROL
 
-#+MButton::media_play_pause
+#+MButton::media_play_pause 
 #+WheelUp::SoundSetVolume "+5"
 #+WheelDown::SoundSetVolume "-5"
 ;#=::SoundSetVolume "+5"
@@ -61,9 +63,10 @@
 
     A_Clipboard := clipboardBackup
 }
+
 +#l::Run "powershell.exe rundll32.exe powrprof.dll,SetSuspendState 0,1,0"
 #q::WinClose "A"
-#+t::{
+#t::{
     WinSetAlwaysOnTop -1, "A"
 }
 
